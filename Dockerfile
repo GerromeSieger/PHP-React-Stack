@@ -1,6 +1,4 @@
-FROM composer:latest
-
-#bitnami/laravel:latest
+FROM bitnami/laravel:latest
 
 WORKDIR /app
 
