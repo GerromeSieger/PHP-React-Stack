@@ -10,4 +10,6 @@ RUN composer install
 
 #RUN php artisan migrate --seed --force
 
+EXPOSE 8000
+
 CMD ["php", "artisan", "serve"]

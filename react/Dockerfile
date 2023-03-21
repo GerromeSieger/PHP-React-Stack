@@ -12,10 +12,14 @@ COPY . /app
 
 RUN npm run build 
 
-FROM nginx:stable-alpine
+EXPOSE 3000
 
-COPY --from=build /app/build /usr/share/nginx/html
+CMD ["npm", "run", "dev"]
 
-COPY --from=build /app /usr/share/nginx/html
+#FROM nginx:stable-alpine
 
-COPY default.conf /etc/nginx/conf.d/default.conf
+#COPY --from=build /app/build /usr/share/nginx/html
+
+#COPY --from=build /app /usr/share/nginx/html
+
+#COPY default.conf /etc/nginx/conf.d/default.conf
