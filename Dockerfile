@@ -6,7 +6,7 @@ COPY . /app
 
 RUN composer install
 
-RUN php artisan key:generate --ansi
+#RUN php artisan key:generate --ansi
 
 RUN php artisan migrate --seed
 
