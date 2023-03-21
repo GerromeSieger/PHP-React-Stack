@@ -1,4 +1,4 @@
-FROM php
+FROM composer:latest
 
 #bitnami/laravel:latest
 
