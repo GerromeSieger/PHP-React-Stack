@@ -35,7 +35,7 @@ jobs:
         with:
           context: ./react
           push: true
-          tags: gerrome/php-react-stack_client:1.1
+          tags: gerrome/php-react-stack_client:1.2
 
       - name: Build and push nginx
         uses: docker/build-push-action@v3
