@@ -1,4 +1,6 @@
-FROM bitnami/laravel:latest
+FROM php
+
+#bitnami/laravel:latest
 
 WORKDIR /app
 
