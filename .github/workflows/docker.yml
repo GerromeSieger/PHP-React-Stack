@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: gerrome/php-react-stack_backend:1.1
+          tags: gerrome/php-react-stack_backend:1.2
        
 
       - name: Build and push frontend
