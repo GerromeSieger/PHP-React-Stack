@@ -8,6 +8,6 @@ RUN composer install
 
 #RUN php artisan key:generate --ansi
 
-RUN php artisan migrate --seed -y
+RUN php artisan migrate --seed --force
 
 CMD ["php", "artisan", "serve"]
