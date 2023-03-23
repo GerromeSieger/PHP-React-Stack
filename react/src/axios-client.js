@@ -2,7 +2,7 @@ import axios from "axios";
 import {useStateContext} from "./context/ContextProvider.jsx";
 
 const axiosClient = axios.create({
-  baseURL: `http://app.ifahsvictor.com/api`
+  baseURL: 'http://app.ifahsvictor.com/api'
 })
 
 axiosClient.interceptors.request.use((config) => {
