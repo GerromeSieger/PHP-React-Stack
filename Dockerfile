@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
+COPY start.sh /
+
 RUN composer install
 
 #RUN php artisan key:generate --ansi
